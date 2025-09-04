@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1000; /* Navbar upar rahega */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo .banner {
+  width: 70px;
+}
+
+.logo p {
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: rgb(3, 163, 38);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: rgb(51, 51, 51);
+}
+
+/* About Head */
+.about-head {
+  width: 100%;
+  text-align: center;
+  height: 73px;
+  background-color: #f4f4f4;
+  margin-top: 20px; /* Navbar ke neeche gap */
+}
+
+.about-head h2 {
+  position: relative;
+  top: 20px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Left Form */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  background: green;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  background: darkgreen;
+}
+
+/* Right Info */
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.info-box i {
+  font-size: 24px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.info-box a {
+  text-decoration: none;
+  color: #333;
+}
+
+.info-box a:hover {
+  color: green;
+}
+
+.info-box a {
+  text-decoration: none;
+  color: #333;
+}
+
+.info-box a:hover {
+  color: green;
+}
+
+.info-box i.fa-whatsapp {
+  color: #25D366; /* WhatsApp green */
+}
+
+
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.social-logo i {
+  font-size: 28px;
+  margin: 0 10px;
+  color: #777;
+}
+
+.foot-menu {
+  margin: 20px 0;
+}
+
+.foot-menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.foot-menu a:hover {
+  color: rgb(3, 163, 38);
+}
+
+.foot-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 768px) {
+  /* Navbar Mobile */
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #f4f4f4;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Contact Section */
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.container {
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo .banner {
+  width: 70px;
+}
+
+.logo p {
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li a {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.menu li a:hover {
+  color: rgb(3, 163, 38);
+}
+
+/* Navbar */
+.container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo .banner {
+  width: 70px;
+}
+
+.logo p {
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: rgb(3, 163, 38);
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: rgb(51, 51, 51);
+}
+
+/* Hero Banner */
+.hero-banner {
+  width: 100%;
+  min-height: 500px;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.hero-banner-info {
+  max-width: 500px;
+}
+
+.hero-banner-info .heading-1,
+.hero-banner-info .heading-2 {
+  font-size: 60px;
+  color: rgb(51, 51, 51);
+  line-height: 1.1;
+}
+
+.hero-banner-info .text {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.hero-btn {
+  width: 195px;
+  height: 51px;
+  border: none;
+  background-color: rgb(3, 163, 38);
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: rgb(3, 112, 32);
+}
+
+.hero-pic {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* Items Section */
+.items-heading {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 40px;
+  color: rgb(51, 51, 51);
+}
+
+.items {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+.card {
+  text-align: center;
+}
+
+.item-1 {
+  background: #f4f4f4;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 1px 12px rgba(0,0,0,0.1);
+}
+
+.item-1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.item-1 img:hover {
+  transform: scale(1.1);
+}
+
+.tags p {
+  margin-top: 10px;
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+}
+
+.tags span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Banner 2 */
+.hero-banner-2 {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.hero-banner-2 img {
+  width: 90%;
+  border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.social-logo i {
+  font-size: 28px;
+  margin: 0 10px;
+  color: rgb(3, 163, 38);
+}
+
+.foot-menu {
+  margin: 20px 0;
+}
+
+.foot-menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.foot-menu a:hover {
+  color: rgb(3, 163, 38);
+}
+
+.foot-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+
+/* ===== Mobile View ===== */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #f4f4f4;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-banner-info .heading-1,
+  .hero-banner-info .heading-2 {
+    font-size: 36px;
+  }
+
+  .hero-pic {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <section>
+    <div class="container">
+      <div class="logo">
+        <a href="./index.html"><img class="banner" src="fine-logo.png" alt="Fine Logo"></a>
+        <p>Fine Wedding Cards</p>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+      <!-- Menu -->
+      <ul class="menu" id="navMenu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About-us</a></li>
+        <li><a href="./new-arrivals.html">New Arrivals</a></li>
+        <li><a href="./our-catalogues.html">Our Collection</a></li>
+        <li><a style="color: rgb(3, 163, 38);"  href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- About Heading -->
+  <section>
+    <div class="about-head">
+      <h2>Contact</h2>
+    </div>
+
+        <!-- Contact Section -->
+  <section class="contact">
+
+    <div class="contact-box">
+      <!-- Left: Form -->
+      <div class="contact-form">
+        <form action="#">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your name">
+
+          <label for="email">e-mail:</label>
+          <input type="email" id="email" placeholder="Your email">
+
+          <label for="msg">Question:</label>
+          <textarea id="msg" rows="4" placeholder="Write your message..."></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+            <!-- Right: Contact Info -->
+        <div class="contact-info">
+        <div class="info-box">
+            <i class="fas fa-phone"></i>
+            <p>
+            <a href="tel:03228269081"><strong>0322-8269081</strong></a><br>
+            Call us
+            </p>
+        </div>
+
+        <div class="info-box">
+            <i class="fas fa-envelope"></i>
+            <p>
+            <a href="mailto:fareedmushtaq@gmail.com"><strong>fareedmushtaq@gmail.com</strong></a><br>
+            Write to us
+            </p>
+        </div>
+
+        <div class="info-box">
+            <i class="fab fa-whatsapp"></i>
+            <p>
+            <a href="https://wa.me/923228269081" target="_blank"><strong>+92 322 8269081</strong></a><br>
+            WhatsApp us
+            </p>
+        </div>
+        </div>
+
+
+  </section>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <!-- Footer -->
+  <hr />
+  <section>
+    <div class="footer">
+      <div class="social-logo">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+
+      <div class="foot-menu">
+        <a href="./privicy-policy.html">Privacy Policy</a>
+        <a style="color: rgb(3, 163, 38);" href="./contact.html">Contact</a>
+        <a href="./terms&conditions.html">Term & Conditions</a>
+      </div>
+
+      <div class="foot-info">
+        <p>&copy; A website created in the WebWave website builder.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

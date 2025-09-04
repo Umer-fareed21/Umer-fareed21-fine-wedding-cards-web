@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1000; /* Navbar upar rahega */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo .banner {
+  width: 70px;
+}
+
+.logo p {
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: rgb(3, 163, 38);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: rgb(51, 51, 51);
+}
+
+/* About Head */
+.about-head{
+  width: 100%;
+  text-align: center;
+  height: 73px;
+  background-color: #f4f4f4;
+  margin-top: 20px; /* Navbar ke neeche gap */
+}
+
+.about-head h2{
+  position: relative;
+  top: 20px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* About Section Side by Side */
+.text-about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2{
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-text p{
+  margin: 15px 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Reviews */
+.reviews{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.reviews span{
+  color: #333;
+  font-size: 30px;
+}
+
+.review-box{
+  margin: 40px auto;
+  text-align: center;
+  max-width: 90%;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.review-box p{
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.review-box .imp{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.review-box .stars img{
+  width: 20px;
+  margin: 0 2px;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.social-logo i {
+  font-size: 28px;
+  margin: 0 10px;
+  color: #777;
+}
+
+.foot-menu {
+  margin: 20px 0;
+}
+
+.foot-menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.foot-menu a:hover {
+  color: rgb(3, 163, 38);
+}
+
+.foot-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== Mobile View ===== */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #f4f4f4;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 999; /* About heading se upar */
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .text-about{
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .about-img{
+    margin-top: 20px;
+  }
+
+  .about-img img{
+    width: 100%;
+  }
+}

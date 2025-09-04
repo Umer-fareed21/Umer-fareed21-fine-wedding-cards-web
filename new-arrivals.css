@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1000; /* Navbar upar rahega */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo .banner {
+  width: 70px;
+}
+
+.logo p {
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: rgb(3, 163, 38);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: rgb(51, 51, 51);
+}
+
+/* Items Section */
+.items-heading {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 40px;
+  color: rgb(51, 51, 51);
+}
+
+.items {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+.card {
+  text-align: center;
+}
+
+.item-1 {
+  background: #f4f4f4;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 1px 12px rgba(0,0,0,0.1);
+}
+
+.item-1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.item-1 img:hover {
+  transform: scale(1.1);
+}
+
+.tags p {
+  margin-top: 10px;
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+}
+
+.tags span {
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.social-logo i {
+  font-size: 28px;
+  margin: 0 10px;
+  color: #777;
+}
+
+.foot-menu {
+  margin: 20px 0;
+}
+
+.foot-menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.foot-menu a:hover {
+  color: rgb(3, 163, 38);
+}
+
+.foot-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 768px) {
+  /* Navbar Mobile */
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #f4f4f4;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
